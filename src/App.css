@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,9 +23,9 @@
 }
 
 .Burger {
-  height: 28px;
-  width: 28px;
-  padding: 8px;
+  height: 50px;
+  width: 50px;
+  padding: 14px;
 }
 
 .Burger svg path {
@@ -34,4 +38,16 @@ main {
 
 h2 {
   font-size: 18px;
+}
+
+.Social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Social img {
+  height: 32px;
+  width: auto;
+  padding: 6px;
 }

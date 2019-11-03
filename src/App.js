@@ -27,7 +27,11 @@ function App() {
         </section>
       </main>
       <footer>
-        <p>Footer</p>
+        <div className="Social">
+          <img src="img/github-icon.svg" alt="GitHub" />
+          <img src="img/instagram.png" alt="Instagram" />
+          <img src="img/twitter-icon.svg" alt="Twitter" />
+        </div>
       </footer>
     </div>
   );
