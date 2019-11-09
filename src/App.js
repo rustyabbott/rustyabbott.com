@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { Route, Link, Switch } from "react-router-dom";
+import Tech from './components/Tech';
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
         </div>
       </header>
       <main>
+        <Link to='tech'>Tech</Link>
+        <Switch>
+          <Route exact path={ '/tech' } component={ Tech } />
+        </Switch>
       </main>
       <footer>
         <div className="Social">

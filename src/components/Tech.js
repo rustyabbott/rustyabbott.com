@@ -1,10 +1,7 @@
-import { React, Component } from 'react';
-import { Link, Route } from 'react-router-dom';
+import React from 'react';
 
-const Technology = ({ match }) => {
-  return(
-    <div>Testing technology</div>
-  )
+export default class Tech extends React.Component {
+  render() {
+    return <h1>Tech page</h1>
+  }
 }
-
-export default Technology;
