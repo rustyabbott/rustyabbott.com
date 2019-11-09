@@ -18,9 +18,9 @@ function App() {
       </main>
       <footer>
         <div className="Social">
-          <img src="img/github-icon.svg" alt="GitHub" />
-          <img src="img/instagram.png" alt="Instagram" />
-          <img src="img/twitter-icon.svg" alt="Twitter" />
+          <a href="https://github.com/rustyabbott">
+            <img src="img/github-icon.svg" alt="GitHub" />
+          </a>
         </div>
       </footer>
     </div>
