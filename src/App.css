@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   background-color: #000;
   min-height: 100vh;
@@ -20,6 +24,7 @@
 
 .App-header-container {
   max-width: 1024px;
+  height: 50px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -28,15 +33,16 @@
 
 .App-name {
   padding: 14px;
+  color: #fff;
 }
 
 .Burger {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
+  padding: 12px;
   height: 50px;
-  padding: 14px;
+  width: 50px;
   background-color: #000;
   color: #fff;
   border-radius: 0;
@@ -50,7 +56,7 @@
 
 .Nav {
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.2s;
   position: fixed;
   background-color: #fff;
   top: 50%;
@@ -65,29 +71,37 @@
   justify-content: center;
 }
 
+.Nav a, .Nav a:hover, .Nav a:visited, .Nav a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 .visible {
   width: 500px;
   height: 500px;
 }
 
-.Nav div {
+.navButton {
   background-color: #000;
   color: #fff;
   width: 80px;
+  height: 80px;
   text-align: center;
   padding: 8px;
   margin: 12px;
   border: 1px solid #fff;
-  transition: all .4s ease-in-out;
+  transition: all .2s ease-in-out;
+  border-radius: 50%;
 }
 
-.Nav div:hover {
+.navButton:hover {
   background-color: #fff;
   color: #000;
-  border: 1px solid #fff;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
-a, a:active, a:visited {
+.navButton a, .navButton a:active, .navButton a:visited {
   color: #000;
   text-decoration: none;
 }
@@ -96,6 +110,14 @@ main {
   max-width: 960px;
   height: calc(100vh - 88px);
   margin: 0 auto;
+}
+
+.pageWrapper {
+  padding: 8px 16px;
+  background-color: rgba(255,255,255,0.95);
+  border-radius: 12px 0;
+  margin: 12px 16px;
+  color: #000;
 }
 
 h2 {

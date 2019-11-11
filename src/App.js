@@ -25,12 +25,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" id="App">
         <header className="App-header">
           <div className="App-header-container">
-            <div className="App-name">
-              Rusty Abbott
-            </div>
+            <Link to="/">
+              <div className="App-name">Rusty Abbott</div>
+            </Link>
             <button className="Burger" onClick={ this.toggleNav }>
               <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V832q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V320q0-26 19-45t45-19h1408q26 0 45 19t19 45z"></path></svg>
             </button>
@@ -38,8 +38,8 @@ class App extends React.Component {
         </header>
         <main>
           <div className="Nav" id="nav">
-            <Link to='/' onClick={ this.toggleNav }><div>Home</div></Link>
-            <Link to='tech'onClick={ this.toggleNav }><div>Tech</div></Link>
+            <Link to='/' onClick={ this.toggleNav }><button className="navButton">Home</button></Link>
+            <Link to='tech'onClick={ this.toggleNav }><button className="navButton">Tech</button></Link>
           </div>
           <Switch>
             <Route exact path={ '/tech' } component={ Tech } />
