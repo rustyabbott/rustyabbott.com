@@ -58,7 +58,7 @@ a {
   overflow: hidden;
   transition: all 0.2s;
   position: fixed;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.90);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -77,8 +77,8 @@ header a, header a:active, header a:visited {
 }
 
 .visible {
-  width: 500px;
-  height: 500px;
+  width: 512px;
+  height: 512px;
 }
 
 .navButton {
@@ -89,9 +89,11 @@ header a, header a:active, header a:visited {
   text-align: center;
   padding: 8px;
   margin: 12px;
-  border: 1px solid #fff;
-  transition: all .2s ease-in-out;
+  border: 1px solid #000;
+  transition: all .2s ease;
   border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .navButton:hover {
@@ -108,7 +110,6 @@ header a, header a:active, header a:visited {
 
 main {
   max-width: 800px;
-  height: calc(100vh - 88px);
   margin: 0 auto;
 }
 
@@ -116,7 +117,7 @@ main {
   padding: 8px 16px;
   background-color: rgba(255,255,255,0.95);
   border-radius: 12px 0;
-  margin: 12px 16px;
+  margin: 44px 16px 0 16px;
   color: #000;
 }
 
@@ -124,8 +125,16 @@ main {
   display: none;
 }
 
+h1 {
+  text-align: right;
+}
+
 h2 {
   font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 .Social {
