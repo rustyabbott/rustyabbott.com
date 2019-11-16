@@ -4,6 +4,16 @@
 
 a {
   text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+
+a:hover, a:focus {
+  color: #2ecefa;
+}
+
+.pageActive {
+  text-decoration: underline;
 }
 
 .App {
@@ -71,11 +81,6 @@ a {
   justify-content: center;
 }
 
-header a, header a:active, header a:visited {
-  color: #fff;
-  text-decoration: none;
-}
-
 .visible {
   width: 512px;
   height: 512px;
@@ -119,6 +124,10 @@ main {
   border-radius: 12px 0;
   margin: 44px 16px 0 16px;
   color: #000;
+}
+
+.pageWrapper a, .pageWrapper a:active, .pageWrapper a:visited {
+  color: #ec0e0e;
 }
 
 .Pages {
