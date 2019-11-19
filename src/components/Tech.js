@@ -1,6 +1,10 @@
 import React from 'react';
 
 export default class Tech extends React.Component {
+  componentDidUpdate = () => {
+    console.log('Tech component just updated');
+  }
+  
   render() {
     return (
       <div className="pageWrapper">
@@ -11,6 +15,12 @@ export default class Tech extends React.Component {
         <p>This web application was built with Facebook's <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>.</p>
         <h2>Hutchinson-Island.com</h2>
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
+        <h2>Fun & Games</h2>
+        <h3>Memory Game</h3>
+        <h3>Frogger</h3>
+        <h3>Analog Clock</h3>
+        <h3>Neighborhood Map</h3>
+        <h3>Restaurant Reviews</h3>
       </div>
     );
   }
