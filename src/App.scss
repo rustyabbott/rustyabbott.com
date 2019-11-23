@@ -5,7 +5,7 @@
 a {
   text-decoration: none;
   color: #fff;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 a:hover {
@@ -20,7 +20,7 @@ a:hover {
   background-color: #000;
   min-height: 100vh;
   color: #fff;
-  background-image: url("/img/lp.gif");
+  background-image: url('/img/lp.gif');
   background-size: cover;
   background-position: center;
   margin: 0 auto;
@@ -95,7 +95,7 @@ a:hover {
   padding: 8px;
   margin: 12px;
   border: 1px solid #000;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
   border-radius: 50%;
   font-size: 18px;
   font-weight: 600;
@@ -120,7 +120,7 @@ main {
 
 .pageWrapper {
   padding: 8px 16px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255,255,255,0.95);
   border-radius: 12px 0;
   margin: 44px 16px 0 16px;
   color: #000;
@@ -170,17 +170,13 @@ footer {
   .Burger {
     display: none;
   }
-
   .Pages {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
-
   .Pages span {
     color: #fff;
     padding: 0 16px 0 0;
   }
 }
-
-/*# sourceMappingURL=App.css.map */
