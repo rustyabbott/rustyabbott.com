@@ -98,17 +98,19 @@ a:hover {
   font-size: 18px;
   font-weight: 600;
 }
-
+.navButton a {
+  color: #000;
+  text-decoration: none;
+}
+.navButton a:active, .navButton a:visited {
+  color: #000;
+  text-decoration: none;
+}
 .navButton:hover {
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
   cursor: pointer;
-}
-
-.navButton a, .navButton a:active, .navButton a:visited {
-  color: #000;
-  text-decoration: none;
 }
 
 main {
@@ -123,8 +125,10 @@ main {
   margin: 44px 16px 0 16px;
   color: #000;
 }
-
-.pageWrapper a, .pageWrapper a:active, .pageWrapper a:visited {
+.pageWrapper a {
+  color: #ec0e0e;
+}
+.pageWrapper a:active, .pageWrapper a:visited {
   color: #ec0e0e;
 }
 
