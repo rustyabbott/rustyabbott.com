@@ -2,9 +2,9 @@ import React from 'react';
 
 export default class Tech extends React.Component {
   componentDidUpdate = () => {
-    console.log('Tech component just updated');
+    console.log('Tech component just updated test');
   }
-  
+
   render() {
     return (
       <div className="pageWrapper">

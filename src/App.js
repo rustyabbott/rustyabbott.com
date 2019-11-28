@@ -4,9 +4,12 @@ import { Switch, Route, Link } from 'react-router-dom';
 import Tech from './components/Tech';
 
 class App extends React.Component {
-  state = {
-    open: false,
-    pageActive: 'home'
+  constructor (props) {
+    super(props);
+    this.state = {
+      open: false,
+      pageActive: 'home'
+    }
   }
 
   componentDidMount = () => {
@@ -17,6 +20,7 @@ class App extends React.Component {
 
   componentDidUpdate = () => {
     console.log('Home component just updated');
+    console.log(window.location.pathname);
   }
 
   toggleNav = () => {
