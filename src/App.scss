@@ -24,7 +24,7 @@ a {
   min-height: 100vh;
   color: #fff;
   background-image: url('/img/lp.gif');
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
 }
@@ -136,6 +136,15 @@ main {
       color: #ec0e0e;
     }
   }
+  .gif-wrapper {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
 }
 
 .Pages {
@@ -167,10 +176,7 @@ h3 {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
 }
 
 @media screen and (min-width: 640px) {

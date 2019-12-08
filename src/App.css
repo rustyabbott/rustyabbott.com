@@ -21,7 +21,7 @@ a:hover {
   min-height: 100vh;
   color: #fff;
   background-image: url("/img/lp.gif");
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
 }
@@ -132,6 +132,15 @@ main {
 .pageWrapper a:active, .pageWrapper a:visited {
   color: #ec0e0e;
 }
+.pageWrapper .gif-wrapper {
+  width: 100%;
+  height: auto;
+}
+.pageWrapper .gif-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 .Pages {
   display: none;
@@ -159,13 +168,6 @@ h3 {
   height: 32px;
   width: auto;
   padding: 6px;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 640px) {

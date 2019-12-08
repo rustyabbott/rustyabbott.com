@@ -19,6 +19,9 @@ export default class Tech extends React.Component {
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
         <h2>Fun & Games</h2>
         <h3>Memory Game</h3>
+        <div class="gif-wrapper">
+          <img src="img/memory-game.gif" alt="memory game" />
+        </div>
         <h3>Frogger</h3>
         <h3>Analog Clock</h3>
         <h3>Neighborhood Map</h3>
