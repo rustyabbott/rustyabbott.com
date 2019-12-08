@@ -5,6 +5,7 @@ import Tech from './components/Tech';
 
 class App extends React.Component {
   constructor (props) {
+    console.log('constructor');
     super(props);
     this.state = {
       open: false,
@@ -16,11 +17,11 @@ class App extends React.Component {
     this.setState({
       ...this.state
     });
+    console.log('home mounted');
   }
 
   componentDidUpdate = () => {
-    console.log('Home component just updated');
-    console.log(window.location.pathname);
+    console.log('home updated');
   }
 
   toggleNav = () => {
@@ -46,6 +47,8 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('home render');
+
     return (
       <div className="App" id="App">
         <header className="App-header">

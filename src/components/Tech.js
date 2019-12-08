@@ -2,17 +2,19 @@ import React from 'react';
 
 export default class Tech extends React.Component {
   componentDidUpdate = () => {
-    console.log('Tech component just updated test');
+    console.log('tech updated');
   }
 
   render() {
+    console.log('tech render');
+
     return (
       <div className="pageWrapper">
         <h1>&lt;Technology /&gt;</h1>
         <h2>Software & Languages</h2>
         <p>React, JavaScript / jQuery / ES6, PHP, MySQL, MariaDB, Python, Bash, HTML5, CSS3, SASS, Symfony 2, Symfony 4, Linux, Apache, Node.js, Yarn, npm, Webpack, Adobe Suite, AWS, Git, GitHub, GitLab.</p>
         <h2>RustyAbbott.com</h2>
-        <p>This web application was built with Facebook's <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>.</p>
+        <p>This web application was built with Facebook's <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>. It utilizes react-router-dom for routing and SASS for styling.</p>
         <h2>Hutchinson-Island.com</h2>
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
         <h2>Fun & Games</h2>
