@@ -17,8 +17,8 @@ export default class Tech extends React.Component {
         <p>This web application was built with Facebook's <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>. It utilizes react-router-dom for routing and SASS for styling.</p>
         <h2>Hutchinson-Island.com</h2>
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
-        <h2>Fun & Games</h2>
-        <h3>Memory Game</h3>
+        <h2>Memory Game</h2>
+        <p></p>
         <div class="gif-wrapper">
           <img src="img/memory-game.gif" alt="memory game" />
         </div>

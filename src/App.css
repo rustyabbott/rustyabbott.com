@@ -132,14 +132,16 @@ main {
 .pageWrapper a:active, .pageWrapper a:visited {
   color: #ec0e0e;
 }
-.pageWrapper .gif-wrapper {
+
+.gif-wrapper {
   width: 100%;
   height: auto;
+  text-align: center;
 }
-.pageWrapper .gif-wrapper img {
+.gif-wrapper img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .Pages {
@@ -170,6 +172,15 @@ h3 {
   padding: 6px;
 }
 
+footer {
+  width: 100%;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+}
+
 @media screen and (min-width: 640px) {
   .Burger {
     display: none;
@@ -183,6 +194,10 @@ h3 {
   .Pages span {
     color: #fff;
     padding: 0 16px 0 0;
+  }
+
+  .gif-wrapper img {
+    width: 80%;
   }
 }
 

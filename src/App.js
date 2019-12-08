@@ -72,7 +72,7 @@ class App extends React.Component {
             <Route exact path={ '/' } />
           </Switch>
         </main>
-        <footer>
+        <footer class="Footer">
           <div className="Social">
             <a href="https://github.com/rustyabbott">
               <img src="img/github-icon.svg" alt="GitHub" />
