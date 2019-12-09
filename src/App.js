@@ -35,15 +35,19 @@ class App extends React.Component {
   homeActive = () =>  {
     const home = document.getElementById('home');
     const tech = document.getElementById('tech');
+    const footer = document.getElementById('footer');
     home.classList.add('pageActive');
     tech.classList.remove('pageActive');
+    footer.classList.add('bottom');
   }
 
   techActive = () => {
     const home = document.getElementById('home');
     const tech = document.getElementById('tech');
+    const footer = document.getElementById('footer');
     home.classList.remove('pageActive');
     tech.classList.add('pageActive');
+    footer.classList.remove('bottom');
   }
 
   render() {
@@ -72,7 +76,7 @@ class App extends React.Component {
             <Route exact path={ '/' } />
           </Switch>
         </main>
-        <footer class="Footer">
+        <footer className="bottom" id="footer">
           <div className="Social">
             <a href="https://github.com/rustyabbott">
               <img src="img/github-icon.svg" alt="GitHub" />
