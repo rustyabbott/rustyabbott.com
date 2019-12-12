@@ -18,11 +18,13 @@ export default class Tech extends React.Component {
         <h2>Hutchinson-Island.com</h2>
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
         <h2>Memory Game</h2>
-        <p></p>
         <div className="gif-wrapper">
           <img src="img/memory-game.gif" alt="memory game" />
         </div>
-        <h3>Frogger</h3>
+        <h2>Arcade Game</h2>
+        <div className="gif-wrapper">
+          <img src="img/arcade-game.gif" alt="arcade game" />
+        </div>
         <h3>Analog Clock</h3>
         <h3>Neighborhood Map</h3>
         <h3>Restaurant Reviews</h3>
