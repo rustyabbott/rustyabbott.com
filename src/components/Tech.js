@@ -18,10 +18,12 @@ export default class Tech extends React.Component {
         <h2>Hutchinson-Island.com</h2>
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
         <h2>Memory Game (<a href="https://github.com/rustyabbott/memory-game" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://rustyabbott.github.io/memory-game/" target="_blank" rel="noopener noreferrer">Play Live</a>)</h2>
+        <p>Match all cards to win! Project two for the Grow with Google / Udacity front-end web development program. Coded with jQuery.</p>
         <div className="gif-wrapper">
           <img src="img/memory-game.gif" alt="memory game" />
         </div>
         <h2>Arcade Game (<a href="https://github.com/rustyabbott/arcade-game" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://rustyabbott.github.io/arcade-game/" target="_blank" rel="noopener noreferrer">Play Live</a>)</h2>
+        <p>A remake of the classic arcade game, "Frogger", for the Grow with Google / Udacity front-end web developer program. Desktop only. Use the arrows on your keyboard to play.</p>
         <div className="gif-wrapper">
           <img src="img/arcade-game.gif" alt="arcade game" />
         </div>
