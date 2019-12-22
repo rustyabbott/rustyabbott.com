@@ -17,11 +17,11 @@ export default class Tech extends React.Component {
         <p>This web application was built with Facebook's <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>. It utilizes react-router-dom for routing and SASS for styling.</p>
         <h2>Hutchinson-Island.com</h2>
         <p>This project was originally built with PHP, jQuery, MySQL, HTML, & CSS, then later rebuilt with Symfony 4.</p>
-        <h2>Memory Game</h2>
+        <h2>Memory Game (<a href="https://github.com/rustyabbott/memory-game" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://rustyabbott.github.io/memory-game/" target="_blank" rel="noopener noreferrer">Play Live</a>)</h2>
         <div className="gif-wrapper">
           <img src="img/memory-game.gif" alt="memory game" />
         </div>
-        <h2>Arcade Game</h2>
+        <h2>Arcade Game (<a href="https://github.com/rustyabbott/arcade-game" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://rustyabbott.github.io/arcade-game/" target="_blank" rel="noopener noreferrer">Play Live</a>)</h2>
         <div className="gif-wrapper">
           <img src="img/arcade-game.gif" alt="arcade game" />
         </div>
