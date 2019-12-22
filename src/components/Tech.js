@@ -25,7 +25,11 @@ export default class Tech extends React.Component {
         <div className="gif-wrapper">
           <img src="img/arcade-game.gif" alt="arcade game" />
         </div>
-        <h3>Analog Clock</h3>
+        <h2>Analog Clock (<a href="https://github.com/rustyabbott/clock" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://rustyabbott.github.io/clock/" target="_blank" rel="noopener noreferrer">Play Live</a>)</h2>
+        <p>Code test requiring the programming of an analog clock in JavaScript & utilizing HTML5 Canvas.</p>
+        <div className="gif-wrapper">
+          <img src="img/analog-clock.gif" alt="arcade game" />
+        </div>
         <h3>Neighborhood Map</h3>
         <h3>Restaurant Reviews</h3>
       </div>
