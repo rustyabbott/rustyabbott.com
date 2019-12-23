@@ -1,4 +1,4 @@
-# Developer Profile with React
+# Developer Portfolio
 
 Developer portfolio built with React.
 
@@ -8,4 +8,4 @@ Developer portfolio built with React.
 
 ### Under Construction
 
-![public/img/dev-profile.gif](public/img/dev-profile.gif)
+![public/img/dev-portfolio.gif](public/img/dev-portfolio.gif)
