@@ -27,7 +27,7 @@ a:hover {
 }
 
 .App-header {
-  background-color: #000;
+  background-color: #ec1075;
   height: 50px;
   font-size: 23px;
 }
@@ -53,7 +53,7 @@ a:hover {
   padding: 12px;
   height: 50px;
   width: 50px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   border-radius: 0;
   border: none;
@@ -81,7 +81,7 @@ a:hover {
 
 .visible {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 49px);
   top: calc(50% + 25px);
 }
 
