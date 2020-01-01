@@ -6,39 +6,29 @@ import Tech from './components/Tech';
 const path = window.location.pathname;
 
 const homeActive = () =>  {
-  const home = document.getElementById('home');
-  const tech = document.getElementById('tech');
-  const footer = document.getElementById('footer');
-  home.classList.add('pageActive');
-  tech.classList.remove('pageActive');
-  footer.classList.add('bottom');
+  document.getElementById('home').classList.add('pageActive');
+  document.getElementById('tech').classList.remove('pageActive');
+  document.getElementById('footer').classList.add('bottom');
 }
 
 const techActive = () => {
-  const home = document.getElementById('home');
-  const tech = document.getElementById('tech');
-  const footer = document.getElementById('footer');
-  home.classList.remove('pageActive');
-  tech.classList.add('pageActive');
-  footer.classList.remove('bottom');
+  document.getElementById('home').classList.remove('pageActive');
+  document.getElementById('tech').classList.add('pageActive');
+  document.getElementById('footer').classList.remove('bottom');
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
-    if (path === '/') {
-      homeActive();
-    } else if (path === '/tech') {
-      techActive();
-    }
+  if (path === '/') {
+    homeActive();
+  } else if (path === '/tech') {
+    techActive();
+  }
 });
 
 export default class App extends Component {
-  constructor (props) {
-    console.log('constructor');
-    super(props);
-    this.state = {
-      open: false,
-      pageActive: 'home'
-    }
+  state = {
+    open: false,
+    pageActive: 'home'
   }
 
   componentDidMount = () => {
