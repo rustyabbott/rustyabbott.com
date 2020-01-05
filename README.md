@@ -4,7 +4,7 @@ Developer portfolio built with React.
 
 ### View Online
 
-* [https://dev.rustyabbott.com](https://dev.rustyabbott.com)
+* [https://rustyabbott.com](https://rustyabbott.com)
 
 ### Under Construction
 
