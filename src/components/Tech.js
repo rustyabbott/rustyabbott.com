@@ -28,7 +28,7 @@ export default class Tech extends React.Component {
           <img src="img/arcade-game.gif" alt="arcade game" />
         </div>
         <h2>Analog Clock (<a href="https://github.com/rustyabbott/clock" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://rustyabbott.github.io/clock/" target="_blank" rel="noopener noreferrer">Play Live</a>)</h2>
-        <p>Code test requiring the programming of an analog clock in JavaScript & utilizing HTML5 Canvas.</p>
+        <p>Simple analog clock in JavaScript utilizing HTML5 Canvas.</p>
         <div className="gif-wrapper">
           <img src="img/analog-clock.gif" alt="arcade game" />
         </div>
