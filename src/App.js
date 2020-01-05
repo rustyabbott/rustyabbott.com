@@ -17,12 +17,16 @@ const techActive = () => {
   document.getElementById('footer').classList.remove('bottom');
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
+const pathSwitch = () => {
   if (path === '/') {
     homeActive();
   } else if (path === '/tech') {
     techActive();
   }
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  pathSwitch();
 });
 
 export default class App extends Component {
@@ -37,6 +41,7 @@ export default class App extends Component {
 
   componentDidUpdate = () => {
     console.log('home updated');
+    pathSwitch();
   }
 
   toggleNav = () => {
