@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 import Tech from './components/Tech';
+import Sort from './components/Sort';
 
 export default class App extends Component {
   state = {
@@ -85,10 +86,12 @@ export default class App extends Component {
           <nav className="Nav" id="nav">
             <Link to='/' onClick={ this.mobileHomeActive }><button className="navButton">Home</button></Link>
             <Link to='tech' onClick={ this.mobileTechActive }><button className="navButton">Tech</button></Link>
+            <Link to='sort'><button className="navButton">Sort</button></Link>
           </nav>
           <Switch>
             <Route exact path={ '/tech' } component={ Tech } />
             <Route exact path={ '/' } />
+            <Route exat path={ '/sort' } component={ Sort } />
           </Switch>
         </main>
         <footer className="bottom" id="footer">
