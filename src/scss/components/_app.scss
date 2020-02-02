@@ -1,48 +1,13 @@
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
-}
-a:hover {
-  color: #2ecefa;
-}
-
-main {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-h1 {
-  text-align: right;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-h3 {
-  font-size: 16px;
-  text-align: right;
-}
-
-footer {
-  width: 100%;
-}
-
 .pageActive {
   text-decoration: underline;
-  color: #2ecefa;
+  color: $blue-glow;
 }
 
 .App {
   background-color: #000;
   min-height: 100vh;
   color: #fff;
-  background-image: url("/img/lp.gif");
+  background-image: url('/img/lp.gif');
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
@@ -75,14 +40,16 @@ footer {
   padding: 12px;
   height: 50px;
   width: 50px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0,0,0,0.0);
   color: #fff;
   border-radius: 0;
   border: none;
   cursor: pointer;
-}
-.Burger svg path {
-  fill: #fff;
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
 }
 
 .Nav {
@@ -116,50 +83,50 @@ footer {
   padding: 8px;
   margin: 12px;
   border: 1px solid #000;
-  transition: all 0.2s ease;
+  transition: all .2s ease;
   border-radius: 50%;
   font-size: 18px;
   font-weight: 600;
-}
-.navButton a {
-  color: #000;
-  text-decoration: none;
-}
-.navButton a:active, .navButton a:visited {
-  color: #000;
-  text-decoration: none;
-}
-.navButton:hover {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000;
-  cursor: pointer;
+  a {
+    color: #000;
+    text-decoration: none;
+    &:active, &:visited {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
 }
 
 .pageWrapper {
   padding: 8px 16px;
-  background-color: white;
+  background-color: rgba(255,255,255);
   border-radius: 12px 0;
   margin: 44px 16px 0 16px;
   color: #000;
-}
-.pageWrapper a {
-  color: #ec0e0e;
-}
-.pageWrapper a:active, .pageWrapper a:visited {
-  color: #ec0e0e;
+  a {
+    color: #ec0e0e;
+    &:active, &:visited {
+      color: #ec0e0e;
+    }
+  }
 }
 
 .gif-wrapper {
   width: 100%;
   height: auto;
   text-align: center;
-}
-.gif-wrapper img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: #d1d1d5 0px 5px 15px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: $shadow;
+  }
 }
 
 .Pages {
@@ -175,31 +142,29 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.Social img {
-  height: 32px;
-  width: auto;
-  padding: 6px;
+  img {
+    height: 32px;
+    width: auto;
+    padding: 6px;
+  }
 }
 
 @media screen and (min-width: 640px) {
   .Burger {
     display: none;
   }
-
   .Pages {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    span {
+      color: #fff;
+      padding: 0 16px 0 0;
+    }
   }
-  .Pages span {
-    color: #fff;
-    padding: 0 16px 0 0;
-  }
-
-  .gif-wrapper img {
-    width: 80%;
+  .gif-wrapper {
+    img {
+      width: 80%;
+    }
   }
 }
-
-/*# sourceMappingURL=App.css.map */
