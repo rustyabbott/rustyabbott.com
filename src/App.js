@@ -3,6 +3,7 @@ import './css/App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 import Tech from './components/Tech';
 import Sort from './components/Sort';
+import Example from './components/Example';
 
 export default class App extends Component {
   state = {
@@ -93,6 +94,7 @@ export default class App extends Component {
             <Route exact path={ '/' } />
             <Route exat path={ '/sort' } component={ Sort } />
           </Switch>
+          <Example />
         </main>
         <footer className="bottom" id="footer">
           <div className="Social">
