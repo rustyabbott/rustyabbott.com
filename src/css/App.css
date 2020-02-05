@@ -103,8 +103,7 @@ footer {
 
 .visible {
   width: 100%;
-  height: calc(100vh - 49px);
-  top: calc(50% + 25px);
+  height: 100vh;
 }
 
 .navButton {

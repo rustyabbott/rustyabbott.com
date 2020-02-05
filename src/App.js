@@ -5,7 +5,7 @@ import Tech from './components/Tech';
 import Sort from './components/Sort';
 import Example from './components/Example';
 
-function App() {
+const App = () => {
   const [pageActive, setPageActive] = useState(window.location.pathname);
   const [open, setOpen] = useState(false);
 
@@ -67,7 +67,6 @@ function App() {
         <nav className="Nav" id="nav">
           <Link to='/' onClick={ mobileHomeActive }><button className="navButton">Home</button></Link>
           <Link to='tech' onClick={ mobileTechActive }><button className="navButton">Tech</button></Link>
-          <Link to='sort'><button className="navButton">Sort</button></Link>
         </nav>
         <Switch>
           <Route exact path={ '/tech' } component={ Tech } />

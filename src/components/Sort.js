@@ -1,15 +1,10 @@
 import React from 'react';
 
-export default class Sort extends React.Component {
-  componentDidUpdate = () => {
-    console.log('sort updated');
-  }
+const Sort = () => {
 
-  render() {
-    console.log('sort render');
-
-    return (
-      <p>testing sort component</p>
-    );
-  }
+  return (
+    <h1>Testing sort component</h1>
+  );
 }
+
+export default Sort;
