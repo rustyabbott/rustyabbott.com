@@ -3,7 +3,6 @@ import './css/App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 import Tech from './components/Tech';
 import Sort from './components/Sort';
-import Example from './components/Example';
 
 const App = () => {
   const [pageActive, setPageActive] = useState(window.location.pathname);
@@ -73,7 +72,6 @@ const App = () => {
           <Route exact path={ '/' } />
           <Route exat path={ '/sort' } component={ Sort } />
         </Switch>
-        <Example />
       </main>
       <footer className="bottom" id="footer">
         <div className="Social">
