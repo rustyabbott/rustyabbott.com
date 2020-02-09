@@ -14,9 +14,13 @@
 }
 
 .App-header {
-  background-color: #ec1075;
+  background-color: $pink;
   height: 50px;
   font-size: 23px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .App-header-container {
@@ -106,7 +110,7 @@
   padding: 8px 16px;
   background-color: rgba(255,255,255);
   border-radius: 12px 0;
-  margin: 44px 16px 0 16px;
+  margin: 0 16px;
   color: #000;
   a {
     color: #ec0e0e;

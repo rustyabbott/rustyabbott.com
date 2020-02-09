@@ -7,7 +7,7 @@ const Tech = () => {
       <h1>&lt;Technology /&gt;</h1>
       <h2>Software & Languages</h2>
       <p>React, JavaScript / jQuery / ES6, PHP, MySQL, MariaDB, Python, Bash, HTML5, CSS3, SASS, Symfony 2, Symfony 4, Linux, Apache, Node.js, Yarn, npm, Webpack, Adobe Suite, AWS, Git, GitHub, GitLab.</p>
-      <h2>RustyAbbott.com</h2>
+      <h2>RustyAbbott.com (<a href="https://github.com/rustyabbott/rustyabbott.com" target="_blank" rel="noopener noreferrer">GitHub</a>)</h2>
       <p>The web app you're currently viewing was built with Facebook's <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">Create React App</a>. It utilizes react-router-dom for routing and SASS/SCSS for styling.</p>
       <h2>Hutchinson-Island.com</h2>
       <p>Coming soon! This project is currently being rebuilt with Symfony 4.</p>

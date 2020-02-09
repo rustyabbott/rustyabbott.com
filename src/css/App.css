@@ -14,6 +14,7 @@ a:hover {
 main {
   max-width: 800px;
   margin: 0 auto;
+  padding: 60px 0 0 0;
 }
 
 h1 {
@@ -52,6 +53,10 @@ footer {
   background-color: #ec1075;
   height: 50px;
   font-size: 23px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .App-header-container {
@@ -139,7 +144,7 @@ footer {
   padding: 8px 16px;
   background-color: white;
   border-radius: 12px 0;
-  margin: 44px 16px 0 16px;
+  margin: 0 16px;
   color: #000;
 }
 .pageWrapper a {
@@ -201,4 +206,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

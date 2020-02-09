@@ -45,7 +45,7 @@ const App = () => {
 
   const toggleNav = () => {
     const nav = document.getElementById('nav');
-    setOpen(!open)
+    setOpen(!open);
     open ? nav.classList.remove('visible') : nav.classList.add('visible');
   }
 
