@@ -21,6 +21,7 @@ const App = () => {
   }
 
   useEffect(() => {
+    setPageActive(window.location.pathname);
     activeSwitch();
     console.log('activeSwitch / useEffect fired');
   });
