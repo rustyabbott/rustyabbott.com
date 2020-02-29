@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './css/App.css';
-// import { Switch, Route, Link } from 'react-router-dom';
 import { useRoutes, A } from 'hookrouter';
 import Routes from './components/Routes';
 
@@ -68,6 +67,7 @@ const App = () => {
           <A href='/' onClick={ mobileHomeActive }><button className="navButton">Home</button></A>
           <A href='tech' onClick={ mobileTechActive }><button className="navButton">Tech</button></A>
         </nav>
+        { routeResult }
       </main>
       <footer className="bottom" id="footer">
         <div className="Social">
@@ -76,7 +76,6 @@ const App = () => {
           </a>
         </div>
       </footer>
-      { routeResult }
     </div>
   );
 }
