@@ -68,6 +68,9 @@ const App = () => {
           <A href='/' onClick={ mobileHomeActive }><button className="navButton">Home</button></A>
           <A href='tech' onClick={ mobileTechActive }><button className="navButton">Tech</button></A>
         </nav>
+        <div className="EarthWrapper">
+          <img src="/img/earth.svg" className="Earth" alt="earth" />
+        </div>
         { routeResult }
       </main>
       <footer className="bottom" id="footer">
