@@ -151,7 +151,7 @@
   }
 }
 
-.Hide {
+.hide {
   display: none;
 }
 
@@ -164,12 +164,12 @@
 }
 
 .Earth {
-  animation: earthTrace 10s;
+  animation: earthTrace 5s;
 }
 
 @keyframes earthTrace {
   100% {
-    transform: rotate3d(50,70,50,360deg);
+    transform: rotate3d(30,30,30,360deg);
     display: none;
   }
 }

@@ -13,10 +13,12 @@ const App = () => {
       document.getElementById('home').classList.add('pageActive');
       document.getElementById('tech').classList.remove('pageActive');
       document.getElementById('footer').classList.add('bottom');
+      document.getElementById('Earth').classList.remove('hide');
     } else if (pageActive === '/tech') {
       document.getElementById('home').classList.remove('pageActive');
       document.getElementById('tech').classList.add('pageActive');
       document.getElementById('footer').classList.remove('bottom');
+      document.getElementById('Earth').classList.add('hide');
     }
   }
 
@@ -69,7 +71,7 @@ const App = () => {
           <A href='tech' onClick={ mobileTechActive }><button className="navButton">Tech</button></A>
         </nav>
         <div className="EarthWrapper">
-          <img src="/img/earth.svg" className="Earth" alt="earth" />
+          <img src="/img/earth.svg" className="Earth" id="Earth" alt="earth" />
         </div>
         { routeResult }
       </main>
