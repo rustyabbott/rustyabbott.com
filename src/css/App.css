@@ -4,6 +4,7 @@
 
 body {
   font-family: Courier New, Arial;
+  background-color: #36393e;
 }
 
 a {
@@ -45,7 +46,6 @@ footer {
 }
 
 .App {
-  background-color: #36393e;
   min-height: 100vh;
   color: #fff;
   background-repeat: no-repeat;
@@ -146,10 +146,9 @@ footer {
 
 .pageWrapper {
   padding: 8px 16px;
-  margin: 60px 0 0 0;
+  margin: 60px 16px 0 16px;
   background-color: white;
   border-radius: 12px 0;
-  margin: 0 16px;
   color: #000;
 }
 .pageWrapper a {
@@ -202,8 +201,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 80%;
   height: 100vh;
+  margin: 0 auto;
 }
 
 .Earth {
