@@ -72,9 +72,10 @@ footer {
   justify-content: space-between;
 }
 
-.App-name {
+.HomeText {
   color: #fff;
   padding: 0 0 0 16px;
+  display: none;
 }
 
 .Burger {
@@ -204,9 +205,30 @@ footer {
   width: 80%;
   height: 100vh;
   margin: 0 auto;
+  padding: 50px 0;
+}
+
+.HomeIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 640px) {
+  .HomeText {
+    display: inline;
+  }
+
+  .HomeIconWrapper {
+    display: none;
+  }
+
   .Burger {
     display: none;
   }
