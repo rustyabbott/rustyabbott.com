@@ -107,9 +107,9 @@
 
 .pageWrapper {
   padding: 8px 16px;
-  margin: 60px 16px 0 16px;
+  margin: 50px 0 0 0;
   background-color: rgba(255,255,255);
-  border-radius: 12px 0;
+  border-radius: 0;
   color: #000;
   a {
     color: #ec0e0e;
@@ -189,6 +189,10 @@
   }
   .Burger {
     display: none;
+  }
+  .pageWrapper {
+    border-radius: 12px 0;
+    margin: 70px 0 0 0;
   }
   .Pages {
     display: flex;
