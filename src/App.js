@@ -62,7 +62,7 @@ const App = () => {
       <header className="App-header">
         <div className="App-header-container">
           <A href="/" className="HomeIconWrapper" onClick={ homeActive }>
-            <img src="/img/home-icon.png" alt="home icon" />
+            <img src="/img/home-icon.svg" alt="home icon" />
           </A>
           <span className="HomeText"><A href="/" id="home" onClick={ homeActive }>Home</A></span>
           <button className="Burger" onClick={ toggleNav }>
