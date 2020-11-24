@@ -220,6 +220,10 @@ footer {
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
+.HomeIconWrapper img {
+  height: 26px;
+  width: 26px;
+}
 
 @media screen and (min-width: 640px) {
   .HomeText {
