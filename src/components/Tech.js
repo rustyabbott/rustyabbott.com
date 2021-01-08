@@ -7,9 +7,11 @@ const Tech = () => {
       <h1>&lt;Technology /&gt;</h1>
       <h2>Software & Languages</h2>
       <p>JavaScript, React, jQuery, ES6, PHP, MySQL, MariaDB, Python, Bash, HTML5, CSS3, SASS, Symfony, Linux, Apache, Nginx, Node.js, Yarn, npm, Webpack, Adobe Suite, AWS, Git, GitHub, GitLab, Docker, OpenStack, Kubernetes, Ubuntu, CentOS, cPanel, WordPress.</p>
-      <h2>InMotion Hosting (<a href="https://ww2.inmotionhosting.com" target="_blank" rel="noopener noreferrer">Marketing Site</a>)</h2>
+      <h2>InMotion Hosting (<a href="https://www.inmotionhosting.com" target="_blank" rel="noopener noreferrer">Marketing Site</a>)</h2>
       <div className="gif-wrapper">
-        <img src="img/imh-ww2-home.png" alt="inmotionhosting.com screenshot" />
+        <a href="https://www.inmotionhosting.com" target="_blank" rel="noopener noreferrer">
+          <img src="img/imh-ww2-home.png" alt="inmotionhosting.com screenshot" />
+        </a>
       </div>
       <p>I'm currently a full-time developer for InMotion Hosting, Inc. Our primary focus lately has been rebuilding the primary marketing site, which can be viewed at <a href="https://www.inmotionhosting.com" target="_blank" rel="noopener noreferrer">www.inmotionhosting.com</a>. The site utilizes Symfony, Nginx, PHP, jQuery, SASS, CentOS, GitLab, and WordPress.
       </p>
