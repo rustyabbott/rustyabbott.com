@@ -14,7 +14,6 @@ const App = () => {
       document.getElementById('tech').classList.remove('pageActive');
       document.getElementById('footer').classList.add('bottom');
       document.getElementById('Earth').classList.remove('hide');
-      //document.getElementById('Earth').classList.add('Earth');
       document.getElementById('EarthWrapper').classList.remove('hide');
       document.getElementById('EarthWrapper').classList.add('EarthWrapper');
     } else if (pageActive === '/tech') {
@@ -22,7 +21,6 @@ const App = () => {
       document.getElementById('tech').classList.add('pageActive');
       document.getElementById('footer').classList.remove('bottom');
       document.getElementById('Earth').classList.add('hide');
-      //document.getElementById('Earth').classList.remove('Earth');
       document.getElementById('EarthWrapper').classList.add('hide');
       document.getElementById('EarthWrapper').classList.remove('EarthWrapper');
     }
