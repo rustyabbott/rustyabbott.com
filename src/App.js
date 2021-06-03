@@ -13,16 +13,16 @@ const App = () => {
       document.getElementById('home').classList.add('pageActive');
       document.getElementById('tech').classList.remove('pageActive');
       document.getElementById('footer').classList.add('bottom');
-      document.getElementById('Earth').classList.remove('hide');
-      document.getElementById('EarthWrapper').classList.remove('hide');
-      document.getElementById('EarthWrapper').classList.add('EarthWrapper');
+      //document.getElementById('Earth').classList.remove('hide');
+      //document.getElementById('EarthWrapper').classList.remove('hide');
+      //document.getElementById('EarthWrapper').classList.add('EarthWrapper');
     } else if (pageActive === '/tech') {
       document.getElementById('home').classList.remove('pageActive');
       document.getElementById('tech').classList.add('pageActive');
       document.getElementById('footer').classList.remove('bottom');
-      document.getElementById('Earth').classList.add('hide');
-      document.getElementById('EarthWrapper').classList.add('hide');
-      document.getElementById('EarthWrapper').classList.remove('EarthWrapper');
+      //document.getElementById('Earth').classList.add('hide');
+      //document.getElementById('EarthWrapper').classList.add('hide');
+      //document.getElementById('EarthWrapper').classList.remove('EarthWrapper');
     }
   }
 
@@ -76,9 +76,6 @@ const App = () => {
           <A href='/' onClick={ mobileHomeActive }><button className="navButton">Home</button></A>
           <A href='tech' onClick={ mobileTechActive }><button className="navButton">Tech</button></A>
         </nav>
-        <div className="EarthWrapper" id="EarthWrapper">
-          <img src="/img/earth.svg" id="Earth" alt="earth" />
-        </div>
         { routeResult }
       </main>
       <footer className="bottom" id="footer">
