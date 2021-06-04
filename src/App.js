@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './css/App.css';
 import { useRoutes, A } from 'hookrouter';
 import Routes from './components/Routes';
+import NotFound from './components/NotFound';
 
 const App = () => {
   const routeResult = useRoutes(Routes);
@@ -13,16 +14,10 @@ const App = () => {
       document.getElementById('home').classList.add('pageActive');
       document.getElementById('tech').classList.remove('pageActive');
       document.getElementById('footer').classList.add('bottom');
-      //document.getElementById('Earth').classList.remove('hide');
-      //document.getElementById('EarthWrapper').classList.remove('hide');
-      //document.getElementById('EarthWrapper').classList.add('EarthWrapper');
     } else if (pageActive === '/tech') {
       document.getElementById('home').classList.remove('pageActive');
       document.getElementById('tech').classList.add('pageActive');
       document.getElementById('footer').classList.remove('bottom');
-      //document.getElementById('Earth').classList.add('hide');
-      //document.getElementById('EarthWrapper').classList.add('hide');
-      //document.getElementById('EarthWrapper').classList.remove('EarthWrapper');
     }
   }
 
@@ -76,7 +71,7 @@ const App = () => {
           <A href='/' onClick={ mobileHomeActive }><button className="navButton">Home</button></A>
           <A href='tech' onClick={ mobileTechActive }><button className="navButton">Tech</button></A>
         </nav>
-        { routeResult }
+        { routeResult || <NotFound /> }
       </main>
       <footer className="bottom" id="footer">
         <div className="Social">
