@@ -1,0 +1,30 @@
+name: Deploy Application
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create SSH key
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/private.key
+          sudo chmod 600 ~/.ssh/private.key
+          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          cat >>~/.ssh/config <<END
+          Host prod
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/private.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.BALKAN_PRIV }}
+          SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+      - name: SSH into server and publish changes
+        run: |
+          ssh prod 'cd /var/www/rustyabbott.com && git checkout master && git pull && npm run build && exit'
