@@ -17,6 +17,4 @@ jobs:
           USER_AT_HOST: ${{ secrets.USER_AT_HOST }}
       - name: Create test file on server
         run: |
-          echo "$SSH_KEY_PATH"
-          ssh -i "$SSH_KEY_PATH" "$USER_AT_HOST"
-          touch testing.txt
+          ssh -i $SSH_KEY_PATH $USER_AT_HOST 'touch testing.txt'
