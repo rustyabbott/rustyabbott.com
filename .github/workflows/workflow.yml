@@ -7,16 +7,16 @@ jobs:
       - name: Create SSH key
         run: |
           mkdir -p ~/.ssh/
-          echo "$BALKAN_PRIV" > ../private.key
-          sudo chmod 600 ../private.key
+          echo "$BALKAN_PRIV" > ~/.ssh/private.key
+          sudo chmod 600 ~/.ssh/private.key
           echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
-        shell: bash
         env:
           SSH_PRIVATE_KEY: ${{ secrets.BALKAN_PRIV }}
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
-          SSH_KEY_PATH: ${{ github.workspace }}/../private.key
+          SSH_KEY_PATH: ~/.ssh/private.key
           USER_AT_HOST: ${{ secrets.USER_AT_HOST }}
       - name: Create test file on server
         run: |
+          echo "$SSH_KEY_PATH"
           ssh -i "$SSH_KEY_PATH" "$USER_AT_HOST"
           touch testing.txt
