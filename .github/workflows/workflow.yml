@@ -22,7 +22,6 @@ jobs:
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
-          WORKING_DIR: ${{ secrets.WORKING_DIR }}
       - name: SSH into server and publish changes
         run: |
-          ssh prod 'cd "$WORKING_DIR" && git checkout master && git pull && npm run build && exit'
+          ssh prod 'cd /var/www/rustyabbott.com && git checkout master && git pull && npm run build && exit'
