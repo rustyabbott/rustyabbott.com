@@ -10,11 +10,17 @@ jobs:
           echo "$BALKAN_PRIV" > ~/.ssh/private.key
           sudo chmod 600 ~/.ssh/private.key
           echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          cat >>~/.ssh/config <<END
+          Host prod
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/private.key
+            StrictHostKeyChecking no
+          END
         env:
           SSH_PRIVATE_KEY: ${{ secrets.BALKAN_PRIV }}
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
           SSH_KEY_PATH: ~/.ssh/private.key
-          USER_AT_HOST: ${{ secrets.USER_AT_HOST }}
       - name: Create test file on server
         run: |
-          ssh -i $SSH_KEY_PATH $USER_AT_HOST 'touch testing.txt'
+          ssh prod 'touch ~/testing.txt'
