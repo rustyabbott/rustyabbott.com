@@ -22,9 +22,7 @@ jobs:
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
-          SSH_KEY_PATH: ~/.ssh/private.key
-      - name: Create test file on server
+          WORKING_DIR: ${{ secrets.WORKING_DIR }}
+      - name: SSH into server and publish changes
         run: |
-          ssh prod 'touch ~/file1.txt'
-          touch '~/file2.txt'
-          ssh prod 'touch ~/file3.txt'
+          ssh prod "cd $WORKING_DIR && git checkout master && git pull && npm run build && exit"
