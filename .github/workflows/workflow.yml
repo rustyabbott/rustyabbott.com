@@ -7,9 +7,9 @@ jobs:
       - name: Create SSH key
         run: |
           mkdir -p ~/.ssh/
-          echo "$BALKAN_PRIV" > ~/.ssh/private.key
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/private.key
           sudo chmod 600 ~/.ssh/private.key
-          echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
           cat >>~/.ssh/config <<END
           Host prod
             HostName $SSH_HOST
@@ -20,6 +20,8 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.BALKAN_PRIV }}
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
           SSH_KEY_PATH: ~/.ssh/private.key
       - name: Create test file on server
         run: |
