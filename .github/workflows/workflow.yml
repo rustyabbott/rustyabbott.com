@@ -16,6 +16,7 @@ jobs:
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
           SSH_KEY_PATH: ${{ github.workspace }}/../private.key
           USER_AT_HOST: ${{ secrets.USER_AT_HOST }}
+      - name: Create test file on server
         run: |
           ssh -i "$SSH_KEY_PATH" "$USER_AT_HOST"
           touch testing.txt
