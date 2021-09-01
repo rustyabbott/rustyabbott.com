@@ -25,4 +25,6 @@ jobs:
           SSH_KEY_PATH: ~/.ssh/private.key
       - name: Create test file on server
         run: |
-          ssh prod 'touch ~/testing.txt'
+          ssh prod 'touch ~/file1.txt'
+          touch '~/file2.txt'
+          ssh prod 'touch ~/file3.txt'
