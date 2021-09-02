@@ -31,4 +31,6 @@ jobs:
         env:
           WORKING_DIR: ${{ secrets.WORKING_DIR }}
       - name: Smoke tests
-        run: sh tests/smoke.sh
+        run: |
+          pwd
+          echo $GITHUB_WORKSPACE
