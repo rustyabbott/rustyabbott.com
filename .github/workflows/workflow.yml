@@ -32,5 +32,6 @@ jobs:
           WORKING_DIR: ${{ secrets.WORKING_DIR }}
       - name: Smoke tests
         run: |
-          pwd
           echo $GITHUB_WORKSPACE
+          ls -laht
+          sh ../tests/smoke.sh
