@@ -25,13 +25,8 @@ jobs:
           SSH_KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USER: ${{ secrets.SSH_USER }}
-      - name: SSH into server and publish changes
+      - name: Deploy and test
         run: |
-          ssh prod "cd $WORKING_DIR && git checkout master && git pull && npm run build && exit"
+          ssh prod "cd $WORKING_DIR && git checkout master && git pull && npm run build && sh tests/smoke.sh && exit"
         env:
           WORKING_DIR: ${{ secrets.WORKING_DIR }}
-      - name: Smoke tests
-        run: |
-          echo $GITHUB_WORKSPACE
-          ls -laht
-          sh ../tests/smoke.sh
