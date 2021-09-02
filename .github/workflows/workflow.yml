@@ -27,6 +27,6 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
       - name: SSH into server and publish changes
         run: |
-          ssh prod 'cd "$WORKING_DIR" && git checkout master && git pull && npm run build && exit'
+          ssh prod "cd $WORKING_DIR && git checkout master && git pull && npm run build && exit"
         env:
           WORKING_DIR: ${{ secrets.WORKING_DIR }}
