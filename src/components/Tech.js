@@ -13,7 +13,7 @@ const Tech = () => {
           <img src="img/mailparser.png" alt="mailparser.io screenshot" />
         </a>
       </div>
-      <p>I'm currently a software engineer at SureSwift Capital where I work on two SaaS applications, <a href="https://mailparser.io" target="_blank" rel="noopener noreferrer">Mailparser</a> &amp; <a href="https://docparser.com" target="_blank" rel="noopener noreferrer">Docparser</a>. We use a variety of technologies, languages including PHP, MySQL, jQuery, AWS Simple Queing Systems (SQS), Docker, and Redis. The apps allow customers to extract data from emails, PDFs, XLS documents (plus many more options) and disperse the data through integrations and APIs like Google Sheets, Zapier, and Microsoft Power Automate.</p>
+      <p>I'm currently a software engineer at SureSwift Capital where I work on two SaaS applications, <a href="https://mailparser.io" target="_blank" rel="noopener noreferrer">Mailparser</a> &amp; <a href="https://docparser.com" target="_blank" rel="noopener noreferrer">Docparser</a>. We use a variety of technologies and languages including PHP, MySQL, jQuery, AWS Simple Queing Systems (SQS), Docker, and Redis. The apps allow customers to extract data from emails, PDFs, XLS documents (plus many more options) and disperse the data through integrations and APIs like Google Sheets, Zapier, and Microsoft Power Automate.</p>
       <div className="gif-wrapper">
         <a href="https://docparser.com" target="_blank" rel="noopener noreferrer">
           <img src="img/docparser.png" alt="docparserr.com screenshot" />
