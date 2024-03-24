@@ -25,7 +25,7 @@ const Tech = () => {
           <img src="img/repfitness.png" alt="repfitness.com screenshot" />
         </a>
       </div>
-      <p>Prior to REP Fitness, I was a Solutions Developer for REP Fitness in Denver, Colorado. Responsibilities included automating processes and maximizing procedural efficiency. Tech stack: PHP, MySQL, Magento 2, jQuery, Git, webhooks, and multiple REST API integrations (Kuebix, Brightpearl, ShipStation, UPS, and more).</p>
+      <p>Prior to SureSwift Capital, I was a Solutions Developer for REP Fitness in Denver, Colorado. Responsibilities included automating processes and maximizing procedural efficiency. Tech stack: PHP, MySQL, Magento 2, jQuery, Git, webhooks, and multiple REST API integrations (Kuebix, Brightpearl, ShipStation, UPS, and more).</p>
       <h2>InMotion Hosting (<a href="https://www.inmotionhosting.com" target="_blank" rel="noopener noreferrer">Marketing Site</a>)</h2>
       <div className="gif-wrapper">
         <a href="https://www.inmotionhosting.com" target="_blank" rel="noopener noreferrer">
